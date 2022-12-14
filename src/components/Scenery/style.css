@@ -18,8 +18,8 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    right: -50px;
-    animation: pipe-anaimation 2s infinite linear;
+    /* left: 120px; */
+    animation: pipe-anaimation 1.5s infinite linear;
 }
 
 .luigi {
