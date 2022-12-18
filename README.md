@@ -1,2 +1,2 @@
-# game-luigi
+# Game-luigi
 Game Luigi with js
