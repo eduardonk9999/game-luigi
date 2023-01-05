@@ -11,7 +11,8 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background-color: #f8ffff;
+    background-color: #cad6ff;
+    border-bottom: 20px solid #e9852f;
 }
 
 .pipe {
@@ -35,12 +36,45 @@
 
 
 img.luigi.game-over {
-    width: 185px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 200px;
     border: 11px solid #0cd52e;
+    background: #fff;
 }
 
+button.btn-start {
+    margin: 6rem auto 0 auto;
+    text-align: center;
+    display: block;
+    width: 10rem;
+    padding: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #147603;
+    background: #fff;
+    border: none;
+    box-shadow: 0.5rem 0.5rem 0.2rem #0000004a;
+    cursor: pointer;
+    opacity: 0;
+}
+
+button.btn-start.active {
+    opacity: 1;
+}
+
+
+img.clouds {
+    width: 20rem;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+@keyframes clouds-animation {
+    
+}
 
 @keyframes pipe-anaimation {
     from {

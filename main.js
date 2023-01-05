@@ -11,6 +11,11 @@ $root.insertAdjacentHTML("beforeend", $htmlScenery)
 
 const luigi = document.querySelector('.luigi');
 const pipe = document.querySelector('.pipe');
+const $btn = document.querySelector('.btn-start')
+
+function start() {
+ location.reload()
+}
 
 function jump() {
 
@@ -24,7 +29,7 @@ function jump() {
  const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
     const luigiPosition = +window.getComputedStyle(luigi).bottom.replace('px', '')
-
+    
 
     // console.log(pipePosition)
 
@@ -37,12 +42,14 @@ function jump() {
         luigi.style.bottom = `${pipePosition}px`;
         luigi.classList.add('game-over')
 
+        $btn.classList.add('active')
     }
 
 }, 10);
 
 
 
+$btn.addEventListener("click", start)
 
 
 
