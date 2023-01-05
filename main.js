@@ -12,6 +12,8 @@ $root.insertAdjacentHTML("beforeend", $htmlScenery)
 const luigi = document.querySelector('.luigi');
 const pipe = document.querySelector('.pipe');
 const $btn = document.querySelector('.btn-start')
+const clouds = document.querySelector('.clouds')
+
 
 function start() {
  location.reload()
@@ -41,6 +43,8 @@ function jump() {
         luigi.style.animation = 'none';
         luigi.style.bottom = `${pipePosition}px`;
         luigi.classList.add('game-over')
+
+        clouds.style.animation = 'none'
 
         $btn.classList.add('active')
     }

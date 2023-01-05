@@ -27,7 +27,7 @@
     width: 150px;
     position: absolute;
     bottom: 0;
-    
+    z-index: 1;
 }
 
 .jump {
@@ -58,6 +58,8 @@ button.btn-start {
     box-shadow: 0.5rem 0.5rem 0.2rem #0000004a;
     cursor: pointer;
     opacity: 0;
+    position: relative;
+    z-index: 1;
 }
 
 button.btn-start.active {
@@ -66,14 +68,21 @@ button.btn-start.active {
 
 
 img.clouds {
-    width: 20rem;
+    width: 10rem;
     position: absolute;
     top: 20px;
     right: 10px;
+    animation: clouds-animation 1.5s infinite linear;
 }
 
 @keyframes clouds-animation {
-    
+    from {
+        right: -20%;
+    }
+
+    to {
+        right: 100%;
+    }
 }
 
 @keyframes pipe-anaimation {
