@@ -39,7 +39,7 @@ function jump() {
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`;
 
-        luigi.src = './assets/over.gif';
+        luigi.src = 'src/assets/over.gif';
         luigi.style.animation = 'none';
         luigi.style.bottom = `${pipePosition}px`;
         luigi.classList.add('game-over')
